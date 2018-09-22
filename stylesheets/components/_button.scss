@@ -1,0 +1,90 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.ld-btn {
+    height: 6rem;
+    width: 18rem;
+    line-height: 6rem;
+    margin: 20px auto;
+    display: inline-block;
+    background: $black-1;
+    color: white;
+    border-radius: 10rem;
+    position: relative;
+    backface-visibility: hidden;
+    text-transform: uppercase;
+    transition: .4s all ease-in-out;
+    text-decoration: none;
+    &:after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        transition: .4s all ease-in-out;
+        background: $black-1;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &:hover {
+        text-decoration: none;
+        transform: translateY(-.3rem);
+        box-shadow: 0rem 0.8rem 1rem $black-1;
+        background: $brand-color;
+        &:after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+                transform-origin: center;
+        }
+    }
+    &:active {
+        box-shadow: 0px .2rem .5rem $black-1;
+        color: $white-1;
+        text-decoration: none;
+    }
+    &:visited {
+        color: $white-1;
+        text-decoration: none;
+    }
+}
+.mouse-container {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .mouse-icon {
+        width: 4rem;
+        height: 7rem;
+        border-radius: 38%;
+        background: black;
+        position: relative;
+        text-align: center;
+        transition: .4s all ease-in-out;
+        .dot {
+            height: 1rem;
+            width: 1rem;
+            background: white;
+            margin: 0 auto;
+            z-index: 2;
+            text-align: center;
+            position: relative;
+            top: 1rem;
+            border-radius: 50%;
+            display: inline-block;
+            animation: jumping ease 1.2s infinite;
+            @keyframes jumping {
+                0% {
+                    transform: translateY(2rem);
+                }
+                100% {
+                    transform: translateY(0rem);
+                }
+            }
+        }
+        &:hover {
+            box-shadow: 0rem 0rem 2rem $white-1;
+        }
+    }
+}

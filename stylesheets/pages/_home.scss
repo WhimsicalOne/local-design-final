@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+// Hero section
+#landing {
+    position: relative;
+    background: linear-gradient(120deg, rgba($black-1, 1) 0% , rgba($brand-color, 0.7) 40%, transparent 60%),
+                url("../img/hero-2.jpeg") no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    .caption-wrapper {
+        font-family: $brand-font;
+        color: $white-1;
+        text-align: center;
+        .hero-heading {
+            font-size: 7rem;
+            letter-spacing: .2rem;
+        }
+        .hero-sub {
+            font-size: 3.5rem;
+            display: block;
+            font-weight: 500;
+            letter-spacing: .1rem;
+            margin-top: -1rem;
+        }
+    }
+}

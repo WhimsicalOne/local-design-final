@@ -1,30 +1,16 @@
 <html>
     <head>
-		<title>Local Design</title>
+		<!-- Everything we need to make this work? -->
+		<title>Local Design | Design for local innovation</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="shortcut icon" type="image/png" href="/img/Asset 3@4x-8.png"/>
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- <link rel="stylesheet" href="css/local.css"> -->
 		<link rel="stylesheet" href="css/main.css">
     </head>
-<body>
-	<!-- Preloader, I mean, can you wait? -->
-	<div class="preloader-background">
-		<div class="preloader-wrapper big active">
-			<div class="spinner-layer spinner-blue-only">
-				<div class="circle-clipper left">
-					<div class="circle"></div>
-				</div>
-				<div class="gap-patch">
-					<div class="circle"></div>
-				</div>
-				<div class="circle-clipper right">
-					<div class="circle"></div>
-				</div>
-			</div>
-		</div>
-	</div>
+<body style="background: rgb(237, 237, 237); padding: 3rem; padding-top: 0; box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.3)">
 	<!-- Nav bar, ww, direction needed much? -->
 	<nav id="main-nav">
 		<div class="container nav-wrapper">
@@ -41,31 +27,23 @@
 			</ul>
 		</div>
 	</nav>
+
 	<!-- Mobile nav, awh, aren't they cute? -->
 	<ul class="sidenav" id="mobile-demo">
-		<li style="list-style: none; display: inline">
-			<div class="col s3 center" id="sidenav-image"><img alt="" class="circle responsive-img" src="img/Leader-512.png"></div>
-		</li>
-		<li>
-			<a href="index.html"><i class="material-icons">home</i>Home</a>
-		</li>
-		<li>
-			<a href="services.html"><i class="material-icons">insert_chart</i>Services</a>
-		</li>
-		<li>
-			<a href="#"><i class="material-icons">burst_mode</i>Portfolio</a>
-		</li>
-		<li>
-			<a href="#"><i class="material-icons">question_answer</i>Contact Us</a>
-		</li>
+		<li><div id="sidenav-image"><img alt="mobile-logo" class="circle responsive-img" src="img/Leader-512.png"></div></li>
+		<li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+		<li><a href="services.html"><i class="material-icons">insert_chart</i>Services</a></li>
+		<li><a href="#"><i class="material-icons">burst_mode</i>Portfolio</a></li>
+		<li><a href="#"><i class="material-icons">question_answer</i>Contact Us</a></li>
 	</ul>
-	<!-- Look, it's a hero, no, dude, it's a plane. -->
-	<div class="section" id="landing">
-		<div class="center-v-h caption-wrapper">
-			<div class="caption-content">
-				<div class="hero-heading">Local<span class="symbol">-</span>Design</div>
-				<span class="hero-sub">Design for local innovation</span>
-				<a href="#" class="ld-btn">Get to know us</a>
+
+	<!-- Look, it's a hero, no, dude, it's a plane. Are we there yet? -->
+	<div id="landing">
+		<div class="center-v-h landing--wrapper">
+			<div class="landing--wrapper__content">
+				<div class="landing--wrapper__content--hero-heading">Local<span class="symbol">-</span>Design</div>
+				<span class="landing--wrapper__content--hero-sub">Design for local innovation</span>
+				<a href="#" class="ld--btn">Solutions</a>
 			</div>
 		</div>
 		<div class="mouse-container">
@@ -76,337 +54,118 @@
 			</a>
 		</div>
 	</div>
+
 	<!-- This is an about section, can you be any less inquisitive? -->
-	<div class="container" id="about">
-			<br><br>
-			<h2 class="center about-head">Our Team</h2>
-			<p class="center about-symbol">&amp;</p>
-			<h6 class="center about-title">What we can do for you</h6>
-			<hr>
-			<div class="row inner-about">
-				<div class="col s12 m4 l4">
-					<div class="story">
-						<h6 class="center">Story</h6>
-						<div class="inner-story center">
-							<p>We are a group of young professionals who are interested in the creation and execution of new ideas and projects.</p>
-							<p>Whether it is an online store or a creative expression of your talents like photography or writing, we can help bring your vision into reality.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m4 l4">
-					<div class="profiles">
-						<h6 class="center">Profile</h6>
-						<div class="card white darken-1">
-							<div class="card-content center black-text">
-								<img height="64" src="img/Leader-512.png" width="64">
-								<p>Our current team is made of of three core individuals</p>
-							</div>
-							<div class="card-action">
-								<a href="mailto:angelo@localdesign.co.za?Subject=I%20have%20a%20question">Angelo</a> <a href='mailto:dean@localdesign.co.za?Subject=I%20have%20a%20question'>Dean</a> <a href='mailto:darryn@localdesign.co.za?Subject=I%20have%20a%20question'>Darryn</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m4 l4">
-					<div class="offerings">
-						<h6 class="center">What we offer</h6>
-						<ul class="collapsible">
-							<li class="active">
-								<div class="collapsible-header" id="test">
-									<i class="fas fa-pencil-alt"></i>Design
-								</div>
-								<div class="collapsible-body">
-									<p>We work with mutiple frameworks, however prefer to use custom code to tailor to our clients needs specifically.</p>
-								</div>
-							</li>
-							<li>
-								<div class="collapsible-header">
-									<i class="fab fa-connectdevelop"></i>Development
-								</div>
-								<div class="collapsible-body">
-									<p>Working with clients we look to find the best way to optimize exposure; this is because if you do something well, people need to know.</p>
-								</div>
-							</li>
-							<li>
-								<div class="collapsible-header">
-									<i class="fas fa-digital-tachograph"></i>Digital Marketing
-								</div>
-								<div class="collapsible-body">
-									<p>The easiest way to reach the world out there is to reach them on the devices they have. With proper digital marketing your name gets everywhere.</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-	</div>
-	<!-- well, well, look at your work! -->
-	<div class="container">
-		<div class="slider depth-3">
-			<ul class="slides">
-				<li>
-						<img src="img/photography.jpeg"> <!-- random image -->
-						<div class="caption center-align">
-							<h3>"Photography"</h3>
-							<h5 class="light grey-text text-lighten-3">Kenny's site</h5>
-						</div>
-					</li>
-					<li>
-						<img src="img/food.jpeg"> <!-- random image -->
-						<div class="caption left-align">
-							<h3>"Physical product site"</h3>
-							<h5 class="light grey-text text-lighten-3">Nice n Sweet</h5>
-						</div>
-					</li>
-					<li>
-						<img src="img/blog.jpeg"> <!-- random image -->
-						<div class="caption right-align">
-							<h3>Blog Site</h3>
-							<h5 class="light grey-text text-lighten-3">Text / Story Orientated site</h5>
-						</div>
-					</li>
-					<li>
-						<img src="img/creative.jpeg"> <!-- random image -->
-						<div class="caption center-align">
-							<h3>Creative</h3>
-							<h5 class="light grey-text text-lighten-3">Various niche site designs</h5>
-						</div>
-					</li>
-				</ul>
-			</div>
-	</div>	
-	
-	<!-- So, look, prices? -->
-	<div class="container">
-		<h2 class="center">Combo Pricing</h2>
-		<div class="row">
-			<div class="col s12 m4">
-				<div class="card hoverable">
-							<div class="card-content center">
-								<h5 class=''>Basic</h5>
-							</div>
-							<div class="card-content center">
-								<h4 class='blue-text '><small>R</small> 1500</h4>
-							</div>
-							<ul class='collection center'>
-								<li class="collection-item">
-								<strong>Custom</strong> Domain
-								</li>
-								<li class='collection-item'>
-								<strong>5GB</strong> Data
-								</li>
-								<li class='collection-item'>
-									<strong>1 - 3</strong> pages
-								</li>
-								<li class='collection-item'>
-									<strong>Contact</strong> Form
-								</li>
-							</ul>
-							<br>
-							<div class="col s12 center">
-									<button class='btn blue waves-effect waves-light'>More Info</button>
-							</div>
-							<br>
-							<div class="card-content center">
-									<h5 class=''>Add-ons</h5>
-							</div>
-							<div class="input-field col s12">
-									<select>
-									<option value="" disabled selected>Integrate SEO</option>
-									<option value="1">Basic - R 200.00</option>
-									<option value="2">Advanced - R 280.00</option>
-									<option value="3">Professional - R 350.00</option>
-									</select>
-
-							</div>
-							<div class="input-field col s12">
-									<select>
-									<option value="" disabled selected>Database</option>
-									<option value="1">Basic</option>
-									<option value="2">Advanced</option>
-									<option value="3">Professional</option>
-									</select>
-
-							</div>
-							<div class="input-field col s12">
-									<select>
-									<option value="" disabled selected>Exrta's</option>
-									<option value="1">Basic</option>
-									<option value="2">Advanced</option>
-									<option value="3">Professional</option>
-									</select>
-
-							</div>
-							<div class="card-content center">
-								<div class="row">
-								<div class="col s12">
-									<button class='btn green'>Free trial</button>
-								</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class=" col s12 m4">
-						<div class="card hoverable">
-							<div class="card-content center">
-								<h5 class=''>Advanced</h5>
-							</div>
-							<div class="card-content center">
-								<h4 class='red-text '><small>R</small> 3000</h4>
-							</div>
-							<ul class='collection center'>
-								<li class="collection-item">
-								<strong>Custom</strong> Domain
-								</li>
-								<li class='collection-item'>
-								<strong>5GB</strong> Data
-								</li>
-								<li class='collection-item'>
-									<strong>3 - 5</strong> pages
-								</li>
-								<li class='collection-item'>
-									<strong>Contact</strong> Form
-								</li>
-							</ul>
-							<br>
-							<div class="col s12 center">
-									<button class='btn blue waves-effect waves-light'>More Info</button>
-							</div>
-							<br>
-							<div class="card-content center">
-									<h5 class=''>Add-ons</h5>
-							</div>
-							<div class="input-field col s12">
-									<select>
-									<option value="" disabled selected>Integrate SEO</option>
-									<option value="1">Basic</option>
-									<option value="2">Advanced</option>
-									<option value="3">Professional</option>
-									</select>
-
-							</div>
-							<div class="input-field col s12">
-									<select>
-									<option value="" disabled selected>Database</option>
-									<option value="1">Basic</option>
-									<option value="2">Advanced</option>
-									<option value="3">Professional</option>
-									</select>
-
-							</div>
-							<div class="input-field col s12">
-									<select>
-									<option value="" disabled selected>Exrta's</option>
-									<option value="1">Basic</option>
-									<option value="2">Advanced</option>
-									<option value="3">Professional</option>
-									</select>
-
-							</div>
-							<div class="card-content center">
-								<div class="row">
-								<div class="col s12">
-									<button class='btn green'>Free trial</button>
-								</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class=" col s12 m4">
-						<div class="card hoverable">
-							<div class="card-content center">
-								<h5 class=''>Professional</h5>
-							</div>
-							<div class="card-content center">
-								<h4 class='purple-text '><small>R</small> 5000</h4>
-							</div>
-							<ul class='collection center'>
-								<li class="collection-item">
-								<strong>Custom</strong> Domain
-								</li>
-								<li class='collection-item'>
-								<strong>10GB</strong> Data
-								</li>
-								<li class='collection-item'>
-									<strong>7 - 10</strong> pages
-								</li>
-								<li class='collection-item'>
-									<strong>Even</strong> more!<a href="services.html" class="secondary-content"><i class="material-icons">send</i></a>
-								</li>
-							</ul>
-							<br>
-							<div class="col s12 center">
-									<button class='btn blue waves-effect waves-light'>More Info</button>
-							</div>
-							<br>
-							<div class="card-content center">
-									<h5 class=''>Add-ons</h5>
-							</div>
-							<div class="input-field col s12">
-									<select>
-									<option value="" disabled selected>Integrate SEO</option>
-									<option value="1">Basic</option>
-									<option value="2">Advanced</option>
-									<option value="3">Professional</option>
-									</select>
-
-							</div>
-							
-							<div class="input-field col s12">
-									
-									<select>
-									<option value="" disabled selected>Database</option>
-									<option value="1">Basic</option>
-									<option value="2">Advanced</option>
-									<option value="3">Professional</option>
-									</select>
-									
-							</div>
-							<div class="input-field col s12">
-									<select>
-									<option value="" disabled selected>Exrta's</option>
-									<option value="1">Basic</option>
-									<option value="2">Advanced</option>
-									<option value="3">Professional</option>
-									</select>
-
-							</div>
-							<div class="card-content center">
-								<div class="row">
-								<div class="col s12">
-									<button class='btn green'>Free trial</button>
-								</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					</div>
-	</div>
-
-	<!-- Do you wanna text us? Stalker much? -->
-	<section> 
-		<div class="z-depth-3" id="contact-form">
-			<div class="row" id="desktop-contact-form" >
-				<form class="col s5 m5">
-					<label>Name</label>
-					<input class="" name="name" placeholder="Name">
-					<label>Email Address</label>
-					<input class="" name="email" placeholder="Email Address">
-					<label>Message</label>
-					<input class="" name="text" placeholder="Ask us a question :)">
-					<br>
-					<a class="waves-effect waves-light btn-small"><i class="material-icons right">mail</i>button</a>
-				</form>
-				<div class="col s6 m6">
-					<h5 class="center">Some text</h5>
-					<br>
-					<p class="flow-text">We believe in community.<br><br> Ask us about what we do and how we do it</p>
-					<p class="flow-text">If you would like to meet faec to face, it can be arranged. We are 
-						able to meet in Cape Town and the surrounding areas</p>
+	<div id="about">
+		<div class="container-fluid about--1">
+			<div class="row">
+				<h2 class="about--1__heading">
+					About us
+				</h2>
+				<div class="about--1__paragraph">
+					We are a group of young professionals who are interested in the creation and execution of new ideas and projects. <br>
+					Whether it is an online store or a creative expression of your talents like photography or writing, we can help bring your vision into reality.
 				</div>
 			</div>
 		</div>
-	</section>
+		<div class="container-fluid about--2">
+			<div class="row">
+				<img class="about--2__image" src="img/Leader-512.png" alt="group-of-guys">
+				<h2 class="about--2__heading">The team</h2>
+				<h4 class="about--2__paragraph">Our current team is made of of three core individuals</h4>
+				<div class="col s4 about--info">
+
+					<div class="about--2__info--heading">Angelo</div>
+					Some kind of paragraph..?
+					<a class="about--2__info--link" href="mailto:angelo@localdesign.co.za?Subject=I%20have%20a%20question">Connect</a>
+				</div>
+				<div class="col s4 about--2__info">
+					<div class="about--2__info--heading">Dean</div>
+					Some kind of paragraph..?
+					<a class="about--2__info--link" href='mailto:dean@localdesign.co.za?Subject=I%20have%20a%20question'>Connect</a>
+				</div>
+				<div class="col s4 about--2__info">
+					<div class="about--2__info--heading">Darryn</div>
+					Some kind of paragraph..?
+					<a class="about--2__info--link" href='mailto:darryn@localdesign.co.za?Subject=I%20have%20a%20question'>Connect</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- So, look, prices? -->
+	<div class="container price-table">
+			<h2 class="price-table--heading">Website packages</h2>
+			<div class="row">
+				<!-- Table one -->
+				<div class="col s12 m4 table-1">
+					<div class="card price-table--card">
+						<h5 class='price-table--card__heading'>Basic</h5>
+						<h4 class='price-table--card__currency' style="background: rgb(171, 216, 245)"><span class="price-table--card__currency--symbol">R</span> 1500</h4>
+						<ul class='price-table--card__list'>
+							<li class="price-table--card__list--items"><strong>Custom</strong> Domain</li> 
+							<li class='price-table--card__list--items'><strong>2GB</strong> Data</li>
+							<li class='price-table--card__list--items'><strong>1 - 3</strong> pages</li>
+							<li class='price-table--card__list--items'><strong>Contact</strong> Form</li>
+							<li class='price-table--card__list--items'><strong>SEO</strong> Included</li>
+						</ul>
+						<a href="#/" class="ld--btn ld--btn__circle">Contact us</a>
+					</div>
+				</div>
+				<!-- Table two -->
+				<div class="col s12 m4 table-2">
+					<div class="card price-table--card">
+						<h5 class='price-table--card__heading'>Advanced</h5>
+						<h4 class='price-table--card__currency' style="background: rgb(0, 188, 72)"><span class="price-table--card__currency--symbol">R</span> 3000</h4>
+						<ul class='price-table--card__list'>
+							<li class="price-table--card__list--items"><strong>Custom</strong> Domain</li>
+							<li class='price-table--card__list--items'><strong>5GB</strong> Data</li>
+							<li class='price-table--card__list--items'><strong>3 - 5</strong> pages</li>
+							<li class='price-table--card__list--items'><strong>Contact</strong> Form</li>
+							<li class='price-table--card__list--items'><strong>SEO</strong> Included</li>
+						</ul>
+						<a href="#/" class="ld--btn ld--btn__circle">Contact us</a>
+					</div>
+				</div>
+				<!-- Table three -->
+				<div class="col s12 m4 table-3">
+					<div class="card price-table--card">
+						<h5 class='price-table--card__heading'>Professional</h5>
+						<h4 class="price-table--card__currency" style="background: rgb(78, 105, 122)"><span class="price-table--card__currency--symbol">R</span>5000</h4>
+						<ul class='price-table--card__list'>
+							<li class="price-table--card__list--items"><strong>Custom</strong> Domain</li>
+							<li class='price-table--card__list--items'><strong>10GB</strong> Data</li>
+							<li class='price-table--card__list--items'><strong>7 - 10</strong> pages</li>
+							<li class='price-table--card__list--items'><strong>Contact</strong> Forms</li>
+							<li class='price-table--card__list--items'><strong>SEO</strong> Included</li>
+						</ul>
+						<a href="#/" class="ld--btn ld--btn__circle ">Contact us</a>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- Do you wanna text us? Stalker much? -->
+	<div id="form-section">
+		<div class="center-v-h" id="contact-form">
+			<div class="row">
+				<form class="col s6 m6 connect-1">
+					<h3 class="form-header">Talk with us!</h3>
+					<input class="" name="name" placeholder="Name">
+					<input class="" name="email" placeholder="Email Address">
+					<input class="" name="text" placeholder="Ask us a question :)">
+					<a class="ld--btn" href="#">Contact us</a>
+				</form>
+				<div class="col s6 m6 connect-2">
+					<h3 class="center">Some text</h3>
+					<p class="flow-text">We believe in community.<br><br> Ask us about what we do and how we do it</p>
+					<p class="flow-text">If you would like to meet faec to face, it can be arranged. We are able to meet in Cape Town and the surrounding areas</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		
+	</footer>
 </body>
 	<!-- You know some JS? Well, well.. look at you! -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

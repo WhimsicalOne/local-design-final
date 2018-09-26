@@ -5,27 +5,164 @@
 // Hero section
 #landing {
     position: relative;
-    background: linear-gradient(120deg, rgba($black-1, 1) 0% , rgba($brand-color, 0.7) 40%, transparent 60%),
-                url("../img/hero-2.jpeg") no-repeat;
+    background: linear-gradient(150deg, 
+                                rgba($brand-2, 0.4) 0%, 
+                                rgba($black-1, 0.5) 53%, 
+                                transparent 50%),
+                url("../img/design6.jpg") no-repeat;
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     backface-visibility: hidden;
-    .caption-wrapper {
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    .landing--wrapper {
         font-family: $brand-font;
         color: $white-1;
         text-align: center;
-        .hero-heading {
-            font-size: 7rem;
-            letter-spacing: .2rem;
+        &__content {
+            color: $white-1;
+            &--hero-heading {
+                font-size: 7rem;
+                letter-spacing: .2rem;
+            }
+            &--hero-sub {
+                font-size: 3.5rem;
+                display: block;
+                font-weight: 500;
+                letter-spacing: .1rem;
+                margin-top: -1rem;
+            }
         }
-        .hero-sub {
-            font-size: 3.5rem;
-            display: block;
+    }
+}
+// About Section
+#about {
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-top: -15rem;
+    margin-bottom: 7rem;
+    .about--1 {
+        background: black;
+        color: white;
+        padding: 3rem;
+        padding-top: 20rem;
+        &__heading {
+            font-size: 4rem;
+            font-family: $brand-font;
+            text-transform: uppercase;
+        }
+        &__paragraph {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    .about--2 {
+        background: black;
+        color: white;
+        padding-bottom: 10rem;
+        &__image {
+            height: 100px;
+        }
+        &__heading {
+            font-size: 3rem;
+            font-family: $brand-font;
+            text-transform: uppercase;
+        }
+        &__paragraph {
+            font-size: 1.9rem;
             font-weight: 500;
-            letter-spacing: .1rem;
-            margin-top: -1rem;
+            margin: 2rem auto;
+        }
+    }
+}
+// Price table section
+.price-table {
+    margin-bottom: 15rem;
+    padding-top: 0rem;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+
+    &--heading {
+        font-size: 5rem;
+        font-family: $brand-font;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    &--card {
+        margin-bottom: 2rem;
+        box-shadow: 0rem .3rem 1.2rem $black-2;
+        position: relative;
+        border-radius: .5rem;
+        background: black;
+        color: white;
+        z-index: 1;
+        &__heading {
+            color: white;
+            height: 10rem;
+            line-height: 10rem;
+            max-width: 100%;
+            margin: 0;
+            font-size: 3rem;
+            font-family: $brand-font;
+        }
+        &__currency {
+            height: 10rem;
+            line-height: 10rem;
+            padding: 0;
+            margin: 0;
+            box-shadow: 0px .3rem .9rem $black-2;
+        }
+    }
+    .table-2 {
+        padding: 1rem 1.3rem 0rem 1.3rem;
+        border: 2px solid black;
+        transform: scale(1.1) translateY(-.6rem);
+        border-radius: .4rem;
+        box-shadow: 0px 0px 3rem $black-2;
+        @media (max-width: 901px) {
+            padding: 0rem;
+            border: none;
+            transform: scale(1) translateY(0);
+            border-radius: 0rem;
+            box-shadow: none;
+        }
+    }
+}
+// Contact section
+#form-section {
+    position: relative;
+    display: block;
+    background: linear-gradient(to bottom right, $brand-1, $brand-2);
+    height: 75vh;
+    color: white;
+    #contact-form {
+        width: 70%;
+        margin: 0 auto;
+        background: linear-gradient(120deg, 
+                                  black 0%, 
+                                    rgba($brand-color, 0.4) 50%, 
+                                    transparent 50%),
+                    url("../img/creative.jpeg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 15rem;
+        border-radius: .5rem;
+        input {
+            width: 80%;
+            margin-bottom: 2rem;
+            position: relative;
+            &:focus {
+                border-bottom: 1px solid $brand-2;
+                color: $white-1;
+                position: relative;
+            }
         }
     }
 }

@@ -139,29 +139,45 @@
 #form-section {
     position: relative;
     display: block;
-    background: linear-gradient(to bottom right, $brand-1, $brand-2);
+    background: linear-gradient(158deg, $brand-1, $brand-2);
     height: 75vh;
-    color: white;
+    color: $black-1;
     #contact-form {
         width: 70%;
         margin: 0 auto;
         background: linear-gradient(120deg, 
-                                  black 0%, 
-                                    rgba($brand-color, 0.4) 50%, 
+                                    rgba($white-1, 0.4) 0%, 
+                                    rgba($white-1, 0.4) 55%, 
                                     transparent 50%),
-                    url("../img/creative.jpeg") no-repeat;
+                    linear-gradient($white-2, $white-2),
+                    url("../img/contact.jpg") no-repeat;
         background-size: cover;
-        background-position: center;
-        padding: 15rem;
-        border-radius: .5rem;
-        input {
-            width: 80%;
-            margin-bottom: 2rem;
-            position: relative;
-            &:focus {
-                border-bottom: 1px solid $brand-2;
-                color: $white-1;
+        background-position: center left;
+        padding: 8rem 5rem;
+        border-radius: .7rem;
+        box-shadow: 0rem 0rem 1.6rem $white-3;
+        .connect-1 {
+            text-align: center;
+            input {
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 2rem;
                 position: relative;
+                border-bottom: 1px solid black;
+                &:focus {
+                    border-bottom: 1px solid $brand-2;
+                    color: $white-1;
+                    position: relative;
+                }
+                &::placeholder {
+                    color: black;
+                }
+            }
+            .form-header {
+                font-size: 3.5rem;
+                font-family: $brand-font;
+                color: $black-1;
+                margin-bottom: 2.35rem;
             }
         }
     }

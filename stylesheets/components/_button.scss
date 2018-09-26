@@ -50,6 +50,9 @@
         color: $white-1;
         text-decoration: none;
     }
+    &:link {
+        text-decoration: none !important;
+    }
 }
 
 .ld--btn__circle {

@@ -5,4 +5,17 @@
     height: 250px;
     background: black;
     text-align: center;
+    position: relative;
+    .text-logo {
+        font-size: 5rem;
+        letter-spacing: .6rem;
+        font-family: $brand-font;
+        color: $brand-2;
+    }
+    .footer-copyright {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
